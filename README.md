@@ -1,5 +1,11 @@
 # ef-synonymous
 
+[![CI](https://github.com/josevilar-qbioai/ef-synonymous/actions/workflows/ci.yml/badge.svg)](https://github.com/josevilar-qbioai/ef-synonymous/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/ef-synonymous.svg)](https://pypi.org/project/ef-synonymous/)
+[![Python](https://img.shields.io/pypi/pyversions/ef-synonymous.svg)](https://pypi.org/project/ef-synonymous/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-teal.svg)](LICENSE)
+[![DOI](https://img.shields.io/badge/Paper-10.5281%2Fzenodo.20275792-blue)](https://doi.org/10.5281/zenodo.20275792)
+
 Scoring **glass-box** de patogenicidad de variantes **sinónimas** a partir de un
 único observable físico interpretable: el ΔΔG de apilamiento *nearest-neighbor*
 con signo (parámetros Turner de RNA) más el sesgo mutacional G>A.

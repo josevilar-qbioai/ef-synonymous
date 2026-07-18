@@ -14,6 +14,14 @@ from .engine import sigma_signed, is_g_to_a, synonymy
 
 _MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.json")
 
+
+def _pkg_version():
+    try:
+        from . import __version__
+        return __version__
+    except Exception:
+        return "unknown"
+
 # Umbrales ACMG ILUSTRATIVOS (sin calibrar clínicamente).
 ACMG_BENIGN_LE = 0.35
 ACMG_PATHOGENIC_GE = 0.65
@@ -69,7 +77,7 @@ class SynonymousSigmaPredictor:
         prob = float(1.0 / (1.0 + np.exp(-logit)))
         aa = len(cds) // 3
         return {
-            "tool": "ef-synonymous", "tool_version": "0.2.0",
+            "tool": "ef-synonymous", "tool_version": _pkg_version(),
             "use": "RESEARCH USE ONLY — not a medical device",
             "model": {
                 "name": "synonymous sigma+G>A (glass-box logistic)",
