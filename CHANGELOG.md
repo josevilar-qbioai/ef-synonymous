@@ -4,6 +4,12 @@ Todas las versiones notables de `ef-synonymous`. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/); versionado
 [SemVer](https://semver.org/).
 
+## [0.2.1] — 2026-07-18
+
+### Changed
+- README bilingüe (English + Español) para la ficha de PyPI.
+- `pip install ef-synonymous` como instalación principal (ya publicado en PyPI).
+
 ## [0.2.0] — 2026-07-18
 
 ### Added
