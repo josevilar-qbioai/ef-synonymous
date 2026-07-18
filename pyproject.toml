@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ef-synonymous"
+version = "0.2.0"
+description = "Glass-box thermodynamic scoring of synonymous variants (signed stacking ΔΔG + G>A)"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Jose Antonio Vilar Sanchez", email = "qmetrika@proton.me" }]
+keywords = ["genomics", "synonymous", "variant", "pathogenicity", "mRNA", "thermodynamics", "ACMG"]
+dependencies = ["numpy>=1.20"]
+
+[project.urls]
+Paper = "https://doi.org/10.5281/zenodo.20275792"
+
+[project.scripts]
+ef-syn = "ef_synonymous.cli:main"
+
+[tool.setuptools]
+packages = ["ef_synonymous"]
+
+[tool.setuptools.package-data]
+ef_synonymous = ["model.json"]

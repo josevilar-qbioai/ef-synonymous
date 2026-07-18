@@ -1,0 +1,14 @@
+{
+  "features": ["sigma_signed", "is_GtoA"],
+  "coef": [0.16482249208383623, 0.5576100073875074],
+  "intercept": -0.06194690256461833,
+  "mean": [0.9596780786918752, 0.3372508942258559],
+  "std": [1.6404340467143472, 0.4727713279903049],
+  "params": "Turner (RNA)",
+  "window": 128,
+  "local_w": 10,
+  "version": "v2 2026-07-17",
+  "training": "ClinVar synonymous v2 (n=1957; 657P/1300B; 456 genes)",
+  "auc": {"pooled": 0.671, "leave_genes_out": 0.680},
+  "reference_cnn_auc": 0.683
+}
