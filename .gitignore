@@ -16,3 +16,6 @@ venv/
 # artefactos de la CLI (redirecciones accidentales, temporales)
 /A
 efsyn_*.cds
+
+# credenciales locales (nunca versionar; usa pypirc.template)
+.pypirc
