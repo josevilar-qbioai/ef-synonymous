@@ -10,5 +10,5 @@
   "version": "v2 2026-07-17",
   "training": "ClinVar synonymous v2 (n=1957; 657P/1300B; 456 genes)",
   "auc": {"pooled": 0.671, "leave_genes_out": 0.680},
-  "reference_cnn_auc": 0.683
+  "reference_cnn_auc": 0.709
 }

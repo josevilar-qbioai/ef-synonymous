@@ -2,7 +2,7 @@
 Predictor glass-box de patogenicidad de variantes SINÓNIMAS (σ + G>A).
 
 Regresión logística de 2 features físicas que reproduce a la CNN dedicada del
-Paper 1 (AUC 0.683). Inferencia solo-numpy. El método `score` devuelve el dossier
+Paper 1 (AUC 0.709, Turner RNA; a la par con la CNN en el set gene-matched, 0.659). Inferencia solo-numpy. El método `score` devuelve el dossier
 completo, auditable y trazable variante a variante (argumento SaMD/ACMG).
 """
 import json

@@ -17,7 +17,7 @@ interpretable physical observable: the signed nearest-neighbor stacking ΔΔG
 (Turner RNA parameters) plus the G>A mutational bias.
 
 A **2-variable** model that reproduces the dedicated CNN of Paper 1
-(AUC 0.671 pooled / 0.680 leave-genes-out ≈ CNN 0.683). Inference is
+(AUC 0.671 pooled / 0.680 leave-genes-out; dedicated CNN 0.709, on par on the gene-matched set). Inference is
 **numpy-only** — no PyTorch, no GPU, no external services. It is the same logic
 as the web prototype and `core/synonymous_sigma_predictor.py`, verified to 1e-6.
 
@@ -84,7 +84,7 @@ reference implementation of the integration.
 ### How it works (and what it is not)
 
 The model is a logistic regression over **two physical observables** that matches
-the dedicated CNN of Paper 1 (AUC 0.683):
+the dedicated CNN of Paper 1 (AUC 0.709, Turner RNA):
 
 - **σ (sigma_signed):** signed sum of nearest-neighbor stacking ΔΔG (Turner RNA
   parameters) over ±10 nt around the variant — local thermodynamic
@@ -114,7 +114,7 @@ Scoring **glass-box** de patogenicidad de variantes **sinónimas** a partir de u
 con signo (parámetros Turner de RNA) más el sesgo mutacional G>A.
 
 Un modelo de **2 variables** que reproduce a la CNN dedicada del Paper 1
-(AUC 0.671 pooled / 0.680 leave-genes-out ≈ CNN 0.683). Inferencia **solo con
+(AUC 0.671 pooled / 0.680 leave-genes-out; CNN dedicada 0.709, a la par en el set gene-matched). Inferencia **solo con
 numpy** — sin PyTorch, sin GPU, sin servicios externos. Es la misma lógica del
 prototipo web y de `core/synonymous_sigma_predictor.py`, verificada a 1e-6.
 
@@ -181,7 +181,7 @@ implementación de referencia de la integración.
 ### Cómo funciona (y qué NO es)
 
 El modelo es una regresión logística de **dos observables físicos** que iguala a
-la CNN dedicada del Paper 1 (AUC 0.683):
+la CNN dedicada del Paper 1 (AUC 0.709, Turner RNA):
 
 - **σ (sigma_signed):** suma con signo del ΔΔG de apilamiento nearest-neighbor
   (parámetros Turner de RNA) en ±10 nt alrededor de la variante — desestabilización

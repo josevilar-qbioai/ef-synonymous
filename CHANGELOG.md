@@ -4,6 +4,16 @@ Todas las versiones notables de `ef-synonymous`. Formato basado en
 [Keep a Changelog](https://keepachangelog.com/); versionado
 [SemVer](https://semver.org/).
 
+## [0.2.2] — 2026-07-24
+
+### Changed
+- Actualizada la referencia de la CNN dedicada del Paper 1 tras reentrenar con
+  parámetros Turner (RNA): **AUC 0.683 → 0.709** (out-of-fold 0.693). El modelo
+  σ+G>A de 2 variables (0.671 pooled / 0.680 leave-genes-out) recupera la mayor
+  parte y queda a la par con la CNN en el set gene-matched (CNN 0.659).
+- `model.json`: `reference_cnn_auc` 0.683 → 0.709 (aparece en el dossier auditable).
+- README y docstrings actualizados. El motor σ+G>A no cambia — solo la cifra de referencia.
+
 ## [0.2.1] — 2026-07-18
 
 ### Changed

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ef-synonymous"
-version = "0.2.1"
+version = "0.2.2"
 description = "Glass-box thermodynamic scoring of synonymous variants (signed stacking ΔΔG + G>A)"
 readme = "README.md"
 requires-python = ">=3.8"
